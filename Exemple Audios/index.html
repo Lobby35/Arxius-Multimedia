@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./src/scripts.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-</head>
+  <body>
+    <h3>Audio ogg</h3>
+    <audio controls loop autoplay>
+      <source src="audio/file_example_OOG_5MG.ogg" type="audio/ogg" />
+      El cercador no soporta el format d'audio escollit
+    </audio>
+    <h3>Audio mp3</h3>
+    <audio controls autoplay muted>
+      <source src="audio/file_example_MP3_5MG.mp3" type="audio/mpeg" />
+      El cercador no soporta el format d'audio escollit
+    </audio>
+    <h3>Audio wav</h3>
+    <audio controls>
+      <source src="audio/file_example_WAV_10MG.wav" type="audio/wav" />
+      El cercador no soporta el format d'audio escollit
+    </audio>
+    <br />
+    <h3>Botó custom per audio</h3>
+    <button onclick="playAudio()">Clica'm per fer sonar l'audio.</button>
+    <button onclick="stopAudio()">Clica'm per atura l'audio.</button>
 
-<body>
-  <h3>Audio ogg</h3>
-  <audio controls loop autoplay>
-    <source src="audio/file_example_OOG_5MG.ogg" type="audio/ogg" />
-    El cercador no soporta el format d'audio escollit
-  </audio>
-  <h3>Audio mp3</h3>
-  <audio controls autoplay muted>
-    <source src="audio/file_example_MP3_5MG.mp3" type="audio/mpeg" />
-    El cercador no soporta el format d'audio escollit
-  </audio>
-  <h3>Audio wav</h3>
-  <audio controls>
-    <source src="audio/file_example_WAV_10MG.wav" type="audio/wav" />
-    El cercador no soporta el format d'audio escollit
-  </audio>
-  <br>
-  <h3>Botó custom per audio</h3>
-  <button onclick="playAudio()">Clica'm per fer sonar l'audio.</button>
-
-  <audio id="buttonAudio">
-    <source src="audio/file_example_WAV_10MG.wav" type="audio/wav" />
-    El cercador no soporta el format d'audio escollit
-  </audio>
-
-  <script src="/src/scripts.js"></script>
-</body>
-
+    <audio id="buttonAudio">
+      <source src="audio/file_example_MP3_5MG.mp3" type="audio/mpeg" />
+      El cercador no soporta el format d'audio escollit
+    </audio>
+  </body>
 </html>

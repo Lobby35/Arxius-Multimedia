@@ -1,4 +1,9 @@
 function playAudio() {
-    var audio = new Audio("/audio/file_example_MP3_5MG.mp3");
-    audio.play();
+  var audio = document.getElementById("buttonAudio");
+  audio.play();
+}
+function stopAudio() {
+  var audio = document.getElementById("buttonAudio");
+  audio.pause();
+  audio.currentTime = 0;
 }
